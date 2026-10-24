@@ -10,81 +10,257 @@
     <meta name="keywords" content="learn urdu online, pashto tutor, urdu literature teacher, university of peshawar, online urdu classes, native urdu speaker">
     <meta name="google-site-verification" content="IlOniI3Fu_0lPMcrtXaoLbM2BrjbzEJxlXLzvj_Lx5U" />
     
-    <!-- 2. SOCIAL MEDIA LINKS (OPEN GRAPH) -->
+    <!-- 2. OPEN GRAPH & TWITTER SOCIAL TAGS -->
+    <meta property="og:site_name" content="Professor Aamira Tutoring">
     <meta property="og:title" content="Learn Urdu & Pashto Online with Professor Aamira">
     <meta property="og:description" content="20+ years of academic teaching experience. Master Urdu literature or conversational Pashto.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sysimus.github.io/aamira_website/">
+    <meta property="og:image" content="https://sysimus.github.io/aamira_website/preview-image.jpg">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Learn Urdu & Pashto Online with Professor Aamira">
+    <meta name="twitter:description" content="20+ years of academic teaching experience. Master Urdu literature or conversational Pashto.">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <script type="application/ld+json">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- 3. ENHANCED SCHEMA.ORG (PERSON & SERVICE) -->
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Learn Urdu & Pashto Online",
-      "url": "https://sysimus.github.io/aamira_website/"
+      "@type": "Person",
+      "name": "Professor Aamira",
+      "jobTitle": "Urdu & Pashto Language Instructor",
+      "url": "https://sysimus.github.io/aamira_website/",
+      "worksFor": {
+        "@type": "EducationalOrganization",
+        "name": "University of Peshawar"
+      },
+      "knowsLanguage": ["Urdu", "Pashto", "English"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Language Tutoring Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Online Urdu Lessons"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Online Pashto Lessons"
+            }
+          }
+        ]
+      }
     }
     </script>
-</head>
-<body style="margin: 0; padding: 0; background-color: #F4F7F6; color: #2C2C2C; font-family: 'Lato', sans-serif; line-height: 1.6;">
 
-    <!-- MAIN semantic container for Google crawlers -->
-    <main style="max-width: 600px; margin: 0 auto; padding: 40px 20px; text-align: center;">
+    <!-- 4. STYLESHEET -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F4F7F6;
+            color: #2C2C2C;
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #004851;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #4DB6AC;
+            margin-top: 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Video Container Styling */
+        .video-card {
+            margin-bottom: 40px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-top: 4px solid #4DB6AC;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        .video-wrapper iframe,
+        .video-wrapper video {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-caption {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 12px;
+            margin-bottom: 0;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+        }
+
+        .content-text {
+            font-size: 1.15rem;
+            color: #444;
+        }
+
+        .link-text {
+            color: #4DB6AC;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: block;
+            background-color: #004851;
+            color: #fff;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 12px rgba(0,72,81,0.3);
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #003339;
+            transform: translateY(-2px);
+        }
+
+        .phone-subtext {
+            font-size: 0.85rem;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        /* Credentials Section */
+        .credentials-article {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid #B2DFDB;
+            text-align: left;
+        }
+
+        .credentials-article h2 {
+            font-family: 'Playfair Display', serif;
+            color: #004851;
+        }
+
+        .back-to-top {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-to-top a {
+            font-size: 0.9rem;
+            color: #777;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
         
-        <header style="margin-bottom: 40px;">
-            <!-- 3. KEYWORD-RICH HEADING -->
-            <h1 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 10px; color: #004851;">
-                Learn Urdu &amp; Pashto Online
-            </h1>
-            <p style="font-size: 1.2rem; color: #4DB6AC; margin-top: 0; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">With Professor Aamira</p>
+        <header>
+            <h1>Learn Urdu &amp; Pashto Online</h1>
+            <p class="subtitle">With Professor Aamira</p>
         </header>
 
-        <section style="margin-bottom: 40px; background: #fff; padding: 15px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid #4DB6AC;">
-            <!-- 4. ACCESSIBILITY OVERLAY FOR LINK -->
-            <a href="https://youtube.com/shorts/c_HexWWH8fQ?feature=share" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               aria-label="Watch Aamira's Urdu and Pashto introduction video on YouTube"
-               style="text-decoration: none; display: block; position: relative; background-color: #004851; aspect-ratio: 16/9; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: background 0.3s;">
-                
-                <div style="width: 0; height: 0; border-top: 20px solid transparent; border-bottom: 20px solid transparent; border-left: 30px solid #fff; margin-bottom: 10px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));"></div>
-                
-                <span style="color: #fff; font-weight: bold; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1.5px;">Play Intro Video</span>
-            </a>
-            <p style="font-size: 0.9rem; color: #666; margin-top: 12px; text-align: center; font-style: italic;">Watch a brief introduction on YouTube (opens in a new tab)</p>
+        <!-- EMBEDDED VIDEO SECTION -->
+        <section class="video-card">
+            <div class="video-wrapper">
+                <!-- YouTube Embedded Player -->
+                <iframe 
+                    src="https://www.youtube-nocookie.com/embed/c_HexWWH8fQ" 
+                    title="Professor Aamira - Urdu and Pashto Language Intro Video" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+
+                <!-- ALTERNATIVE: Direct HTML5 Video (If hosted on server instead of YouTube)
+                <video controls poster="video-thumbnail.jpg">
+                    <source src="intro-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                -->
+            </div>
+            <p class="video-caption">Watch Professor Aamira's brief introduction</p>
         </section>
 
-        <section style="margin-bottom: 40px;">
-            <!-- 5. SEARCH INTENT TARGETING -->
-            <p style="font-size: 1.15rem; color: #444;">
+        <section class="content-section">
+            <p class="content-text">
                 Academic expertise meets <strong>20 years of language teaching experience</strong>. Master the beauty of conversational or literary Urdu and Pashto with an active faculty member from the <strong>University of Peshawar</strong>.
             </p>
-            <a href="#about" style="color: #4DB6AC; text-decoration: underline; font-weight: bold;">View teaching credentials &amp; experience</a>
+            <a href="#about" class="link-text">View teaching credentials &amp; experience</a>
         </section>
 
-        <section style="margin-bottom: 40px;">
-            <!-- 6. CLEAR CTA FOR CONTACTING -->
+        <section class="content-section">
             <a href="https://wa.me/923159100445" 
                aria-label="Contact Aamira for tutoring via WhatsApp"
-               style="display: block; background-color: #004851; color: #fff; text-decoration: none; padding: 18px; border-radius: 8px; font-weight: bold; font-size: 1.1rem; box-shadow: 0 4px 12px rgba(0,72,81,0.3);">
+               class="cta-button">
                 Book a Lesson via WhatsApp
             </a>
-            <p style="font-size: 0.85rem; color: #999; margin-top: 10px;">Direct Phone: +92 315 9100445</p>
+            <p class="phone-subtext">Direct Phone: +92 315 9100445</p>
         </section>
 
-        <!-- 7. SEMANTIC ARTICLE FOR CREDENTIALS -->
-        <article id="about" style="margin-top: 60px; padding-top: 40px; border-top: 1px solid #B2DFDB; text-align: left;">
-            <h2 style="font-family: 'Playfair Display', serif; color: #004851;">Professional Urdu &amp; Pashto Tutoring Credentials</h2>
-            <p style="font-size: 1.1rem; color: #444;">
+        <article id="about" class="credentials-article">
+            <h2>Professional Urdu &amp; Pashto Tutoring Credentials</h2>
+            <p class="content-text">
                 Aamira holds an advanced <strong>Master’s degree in Urdu Literature</strong> and serves as a distinguished professional instructor at the <strong>University of Peshawar</strong>. 
             </p>
-            <p style="font-size: 1.1rem; color: #444;">
+            <p class="content-text">
                 With over <strong>two decades of professional language teaching experience</strong>, she has successfully tutored international students across the globe, including language learners in Canada, Saudi Arabia, and the United States. Her customized curriculum combines deep literary knowledge with practical conversational skills tailored for heritage learners and international students.
             </p>
-            <div style="text-align: center; margin-top: 30px;">
-                <a href="#" style="font-size: 0.9rem; color: #999; text-decoration: none;">↑ Back to top</a>
+            <div class="back-to-top">
+                <a href="#">↑ Back to top</a>
             </div>
         </article>
 
     </main>
+
 </body>
 </html>
